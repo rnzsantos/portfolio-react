@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  background: #0a0f17;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #E14D2A;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #A63419;
+}
+
+.bg {
+  background: #111722;
+}
+
+.name {
+  color: #f55050;
+  font-weight: 700;
+  text-shadow: 0 0 2px;
+}
+
+.course {
+  color: #f5f5dc;
+  font-weight: 700;
+  text-shadow: 0 0 2px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 117px 79px;
+  justify-content: space-evenly;
+  row-gap: 1.5em;
+  column-gap: 3em;
+}
+
+.fa-circle-check {
+  color: #2192ff;
+}
+
+@media (min-width: 992px) {
+  .course {
+    font-size: 2rem;
+  }
+}
