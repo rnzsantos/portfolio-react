@@ -9,7 +9,7 @@ export default function Header() {
             Portfolio
           </a>
 
-          <button
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -30,7 +30,7 @@ export default function Header() {
                 </NavLink>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </header>

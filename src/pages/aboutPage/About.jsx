@@ -1,6 +1,12 @@
 import profileImage from "../../assets/profile-image.jpg"
+import Project from "../../components/Project"
+import projectsDb from "./projectsDb"
 
 export default function About() {
+  const projectElement = projectsDb.map(project => (
+    <Project key={project.id} {...project} />
+  ))
+
   return (
     <>
       <section className="text-light">
@@ -43,7 +49,8 @@ export default function About() {
       </section>
 
       <section className="text-light">
-        <div className="container
+        <div
+          className="container
         p-5 d-flex 
         flex-column
         flex-md-row
@@ -94,6 +101,13 @@ export default function About() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="text-light">
+        <div className="container p-5">
+        <p className="h4 text-center mb-5 fw-bold">Projects</p>
+          <div className="row justify-content-evenly gap-5">{projectElement}</div>
         </div>
       </section>
     </>
