@@ -5,7 +5,7 @@ export default function Project(props) {
         <div className="card bg p-1" style={{ width: "250px" }}>
           <a href={`..assets/images/${props.url}`} target="_blank">
             <img
-              src={`../assets/images/${props.img}`}
+              src={`../../src/assets/images/${props.img}`}
               className="card-img-top rounded"
               alt=""
             />
