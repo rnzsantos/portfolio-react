@@ -1,3 +1,4 @@
+import resume from "../../assets/resume.pdf"
 import profileImage from "../../assets/profile-image.jpg"
 import Project from "../../components/Project"
 import projectsDb from "./projectsDb"
@@ -38,10 +39,7 @@ export default function About() {
             </p>
             <p>ICI-College of Arts and Technology</p>
 
-            <a
-              className="btn btn-outline-success mt-4"
-              href="../../assets/resume.pdf"
-              download>
+            <a className="btn btn-outline-success mt-4" href={resume} download>
               Download Resume
             </a>
           </div>
@@ -106,8 +104,10 @@ export default function About() {
 
       <section className="text-light">
         <div className="container p-5">
-        <p className="h4 text-center mb-5 fw-bold">Projects</p>
-          <div className="row justify-content-evenly gap-5">{projectElement}</div>
+          <p className="h4 text-center mb-5 fw-bold">Projects</p>
+          <div className="row justify-content-evenly gap-5">
+            {projectElement}
+          </div>
         </div>
       </section>
     </>
